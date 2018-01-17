@@ -1,11 +1,10 @@
 #!/bin/bash
 
-
-python3 -m pip install --user virtualenv
 cd ~/Documents
+curl -L -o virtualenv.py https://raw.github.com/pypa/virtualenv/master/virtualenv.py
 
-python3 -m virtualenv pytmp
-source pytmp/bin/activate
+python virtualenv.py -p python3 python
+source python/bin/activate
 
 pip3 install numpy
 pip3 install scipy
