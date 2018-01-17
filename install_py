@@ -2,9 +2,13 @@
 
 cd ~/Documents
 
-pip3 install --user virtualenv
-python3 -m virtualenv env
-source env/bin/activate
+curl https://pypi.python.org/packages/d4/0c/9840c08189e030873387a73b90ada981885010dd9aea134d6de30cd24cb8/virtualenv-15.1.0.tar.gz > virtualenv-15.1.0.tar.gz
+
+tar -zxvf virtualenv-15.1.0.tar.gz
+
+python3 virtualenv-15.1.0/virtualenv.py -p python3 env1
+
+source env1/bin/activate
 
 pip3 install numpy
 pip3 install scipy
