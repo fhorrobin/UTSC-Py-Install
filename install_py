@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+python3 -m pip install --user virtualenv
+cd ~/Documents
+
+python3 -m virtualenv pytmp
+source pytmp/bin/activate
+
+pip3 install numpy
+pip3 install scipy
+pip3 install matplotlib
+pip3 install scikit-learn
+pip3 install pandas
+pip3 install jupyter
+
