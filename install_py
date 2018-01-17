@@ -2,8 +2,13 @@
 
 cd ~/Documents
 
-pip3 install --user virtualenv
-python3 -m virtualenv env
+curl  https://pypi.python.org/packages/source/v/virtualenv/virtualenv-15.1.0.tar.gz > virtualenv-15.1.0.tar.gz
+
+tar -zxvf virtualenv-15.1.0.tar.gz
+
+mv virtualenv-15.1.0/virtualenv.py ~/Documents
+
+python3 virtualenv.py -p python3 env
 source env/bin/activate
 
 pip3 install numpy
